@@ -1,0 +1,30 @@
+
+
+
+.title {
+    margin-bottom: 50px;
+  }
+  .what-are-we-doing-title {
+    @include font(36px, 1.166);
+   /* font-size: 36px;
+    line-height: 1.166;
+    letter-spacing: 0.03em;*/
+    text-align: center;
+    color: var(--primary-text-color);
+  }
+  .our-team-title {
+    @include font(36px, 1.166);
+   /* font-size: 36px;
+    line-height: 1.166;
+    letter-spacing: 0.03em;*/
+    text-align: center;
+    color: var(--primary-text-color);
+  }
+  .our-clients-title {
+    @include font(36px, 1.166);
+  /*  font-size: 36px;
+    line-height: 1.166;
+    letter-spacing: 0.03em;*/
+    text-align: center;
+    color: var(--primary-text-color)
+    }

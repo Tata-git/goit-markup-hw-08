@@ -1,0 +1,52 @@
+
+.our-team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background: var(--secondary-background);
+}
+
+.our-team-name-title {
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  @include font(16px, 1.186);
+  /*font-size: 16px;
+  line-height: 1.186;
+  letter-spacing: 0.03em;*/
+  text-align: center;
+  color: var(--primary-text-color);
+}
+.our-team-function {
+  margin-bottom: 16px;
+  @include font(16px, 1.188);
+ /* font-size: 16px;
+  line-height: 1.188;
+  letter-spacing: 0.03em;*/
+  text-align: center;
+  color: var(--text-color);
+}
+.our-team-photo {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.team-item {
+  flex-basis: calc((100% - 120px) / 4);
+  margin-left: 30px;
+  margin-top: 30px;
+
+  border-right: 1px;
+  border-bottom: 1px;
+  border-left: 1px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.our-team-box {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 36px;
+  padding-right: 36px;
+
+  background-color: var(--background-white);
+}

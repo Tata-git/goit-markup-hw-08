@@ -1,0 +1,38 @@
+
+
+.what-are-we-doing {
+    padding-bottom: 94px;
+  }
+  
+  .doing-img-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+  .doing-item {
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+  .doing-overlay {
+    position: relative;
+  }
+  .doing-text {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  @include font();
+ /* font-size: 14px;
+  line-height: 1.142px;
+  letter-spacing: 0.03em;*/
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--white-text-color);
+  }
