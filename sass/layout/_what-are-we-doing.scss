@@ -1,8 +1,8 @@
-
-
-.what-are-we-doing {
-    padding-bottom: 94px;
+@media screen and (max-width: 1199px) {
+  .what-are-we-doing {
+    display: none;
   }
+}
   
   .doing-img-list {
     display: flex;
