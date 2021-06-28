@@ -1,38 +1,38 @@
 
 
 
-.our-clients-list {
-    display: flex;
-  }
-  .our-clients-list .item + .item {
-      margin-left: 30px;
-  }
+// .our-clients-list {
+//     display: flex;
+//   }
+//   .our-clients-list .item + .item {
+//       margin-left: 30px;
+//   }
 
-  .clients-icon {
-    transition: border var(--transition-duretion) var(--transition-timing-function); 
+//   .clients-icon {
+//     transition: border var(--transition-duretion) var(--transition-timing-function); 
   
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 170px;
-    height: 92px;
-   /* outline: 1px solid tomato;*/
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 170px;
+//     height: 92px;
+//    /* outline: 1px solid tomato;*/
   
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
-    box-sizing: border-box;
+//     border: 1px solid #AFB1B8;
+//     border-radius: 4px;
+//     box-sizing: border-box;
 
-     &:hover,
-     &:focus {
-       border: 1px solid var(--accent-color);
-     }
-  }
-  .clients-logo-icon {
-    transition: fill var(--transition-duretion) var(--transition-timing-function); 
+//      &:hover,
+//      &:focus {
+//        border: 1px solid var(--accent-color);
+//      }
+//   }
+//   .clients-logo-icon {
+//     transition: fill var(--transition-duretion) var(--transition-timing-function); 
 
-    .clients-icon:hover &,
-    .clients-icon:focus & {
-      fill: var(--accent-color);
-    }
-  }
+//     .clients-icon:hover &,
+//     .clients-icon:focus & {
+//       fill: var(--accent-color);
+//     }
+//   }
 
