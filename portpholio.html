@@ -15,7 +15,7 @@
     </head>
    <body>
     <!--HEADER-->
-    <header class="header">
+   <!-- <header class="header">
     <div class="container page-header">
        <nav class="nav">
         <a class="logo header__logo link" href="./index.html"><span>Web</span>Studio</a>
@@ -54,14 +54,14 @@
         </li>
       </ul>
       </div>
-    </header>
+    </header>-->
     <!--PORTFOLIO-->
     <h1 class="visually-hidden">Контент страницы Portfolio</h1>
     <main>
       <section class="section">
                  <!--PORTFOLIO container filter-->
        <div class="container ">  
-         <ul class="portfolio-filter list">
+        <!-- <ul class="portfolio-filter list">
             <li class="item">
              <button class="filter-btn" type="button">Все</button>
             </li>
@@ -77,17 +77,26 @@
             <li class="item">
             <button class="filter-btn" type="button">Маркетинг</button>
             </li>
-         </ul>
+         </ul>-->
          <ul class="portfolio-card-set list">
             <li class="item">
               <a class="pf-link link" href="#">
                 <div class="pf-card-relative">
-                 <img
-                  src="./Image/portfolio-filter/site-tehnokriak.jpg"
-                  alt="сайт технокряк"
-                  width="370"
-                  height="294"
+                  <picture>
+                    <source
+                    srcset="./Image/portfolio-filter/desktop/portfolio.1.desktop.jpg 1x, ./Image/portfolio-filter/desktop/portfolio.1.desktop2x.jpg 2x"
+                    media="(min-width: 1200px)">
+                    <source
+                    srcset="./Image/portfolio-filter/tablet/portfolio.1.tablet.jpg 1x, ./Image/portfolio-filter/tablet/portfolio.1.tablet2x.jpg 2x"
+                    media="(min-width: 768px)">      
+                    <source 
+                    srcset="./Image/portfolio-filter/mobile/portfolio.1.mobile.jpg 1x, ./Image/portfolio-filter/mobile/portfolio.1.mobile2x.jpg 2x"      
+                    media="(min-width: 320px)">             
+                    <img
+                    src="./Image/portfolio-filter/mobile/portfolio.1.mobile.jpg"
+                    alt="сайт технокряк"
                   />
+                  </picture>
                   <p class="pf-card-overlay">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </p>
                 </div>
@@ -100,12 +109,21 @@
            <li class="item">
             <a class="pf-link link" href="#">
               <div class="pf-card-relative">
-              <img
-                src="./Image/portfolio-filter/design-new-orlean.jpg"
-                alt="дизайн постера новый орлеан и голден стар "
-                width="370"
-                height="294"
-              />
+                <picture>
+                  <source
+                  srcset="./Image/portfolio-filter/desktop/portfolio.2.desktop.jpg 1x, ./Image/portfolio-filter/desktop/portfolio.2.desktop2x.jpg 2x"
+                  media="(min-width: 1200px)">
+                  <source
+                  srcset="./Image/portfolio-filter/tablet/portfolio.2.tablet.jpg 1x, ./Image/portfolio-filter/tablet/portfolio.2.tablet2x.jpg 2x"
+                  media="(min-width: 768px)">      
+                  <source 
+                  srcset="./Image/portfolio-filter/mobile/portfolio.2.mobile.jpg 1x, ./Image/portfolio-filter/mobile/portfolio.2.mobile2x.jpg 2x"      
+                  media="(min-width: 320px)">             
+                  <img
+                  src="./Image/portfolio-filter/mobile/portfolio.2.mobile.jpg"
+                  alt="дизайн постера новый орлеан и голден стар"
+                />
+                </picture>
               <p class="pf-card-overlay">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
               </p>
             </div>
@@ -118,13 +136,22 @@
            <li class="item">
             <a class="pf-link link" href="#">
               <div class="pf-card-relative">
-              <img
-                src="./Image/portfolio-filter/app-restaurant-seafood.jpg"
-                alt="Приложение Ресторана сифуд"
-                width="370"
-                height="294"
-              />
-              <p class="pf-card-overlay">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
+                <picture>
+                  <source
+                  srcset="./Image/portfolio-filter/desktop/portfolio.3.desktop.jpg 1x, ./Image/portfolio-filter/desktop/portfolio.3.desktop2x.jpg 2x"
+                  media="(min-width: 1200px)">
+                  <source
+                  srcset="./Image/portfolio-filter/tablet/portfolio.3.tablet.jpg 1x, ./Image/portfolio-filter/tablet/portfolio.3.tablet2x.jpg 2x"
+                  media="(min-width: 768px)">      
+                  <source 
+                  srcset="./Image/portfolio-filter/mobile/portfolio.3.mobile.jpg 1x, ./Image/portfolio-filter/mobile/portfolio.3.mobile2x.jpg 2x"      
+                  media="(min-width: 320px)">             
+                  <img
+                  src="./Image/portfolio-filter/mobile/portfolio.3.mobile.jpg"
+                  alt="Приложение Ресторана сифуд"
+                />
+                </picture>
+                <p class="pf-card-overlay">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
               </p>
             </div>
               <div class="portfolio-box">
@@ -136,12 +163,21 @@
            <li class="item">
             <a class="pf-link link" href="#">
               <div class="pf-card-relative">
-              <img
-                src="./Image/portfolio-filter/marketing-project-prime.jpg"
-                alt="Маркетинг Проекта прайм"
-                width="370"
-                height="294"
-              />
+                <picture>
+                  <source
+                  srcset="./Image/portfolio-filter/desktop/portfolio.4.desktop.jpg 1x, ./Image/portfolio-filter/desktop/portfolio.4.desktop2x.jpg 2x"
+                  media="(min-width: 1200px)">
+                  <source
+                  srcset="./Image/portfolio-filter/tablet/portfolio.4.tablet.jpg 1x, ./Image/portfolio-filter/tablet/portfolio.4.tablet2x.jpg 2x"
+                  media="(min-width: 768px)">      
+                  <source 
+                  srcset="./Image/portfolio-filter/mobile/portfolio.4.mobile.jpg 1x, ./Image/portfolio-filter/mobile/portfolio.4.mobile2x.jpg 2x"      
+                  media="(min-width: 320px)">             
+                  <img
+                  src="./Image/portfolio-filter/mobile/portfolio.4.mobile.jpg"
+                  alt="Маркетинг Проекта прайм"
+                />
+                </picture>
               <p class="pf-card-overlay">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
               </p>
             </div>
@@ -154,12 +190,21 @@
            <li class="item">
             <a class="pf-link link" href="#">
               <div class="pf-card-relative">
-              <img
-                src="./Image/portfolio-filter/app-project-boxes.jpg"
-                alt="приложение проекта боксис"
-                width="370"
-                height="294"
-              />
+                <picture>
+                  <source
+                  srcset="./Image/portfolio-filter/desktop/portfolio.5.desktop.jpg 1x, ./Image/portfolio-filter/desktop/portfolio.5.desktop2x.jpg 2x"
+                  media="(min-width: 1200px)">
+                  <source
+                  srcset="./Image/portfolio-filter/tablet/portfolio.5.tablet.jpg 1x, ./Image/portfolio-filter/tablet/portfolio.5.tablet2x.jpg 2x"
+                  media="(min-width: 768px)">      
+                  <source 
+                  srcset="./Image/portfolio-filter/mobile/portfolio.5.mobile.jpg 1x, ./Image/portfolio-filter/mobile/portfolio.5.mobile2x.jpg 2x"      
+                  media="(min-width: 320px)">             
+                  <img
+                  src="./Image/portfolio-filter/mobile/portfolio.5.mobile.jpg"
+                  alt="приложение проекта боксис"
+                />
+                </picture>
               <p class="pf-card-overlay">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
               </p>
             </div>
@@ -172,12 +217,21 @@
            <li class="item">
             <a class="pf-link link" href="#">
               <div class="pf-card-relative">
-              <img
-                src="./Image/portfolio-filter/site-inspiration.jpg"
-                alt="Веб-сайт инспирейшн хез ноу бордерз  "
-                width="370"
-                height="294"
-              />
+                <picture>
+                  <source
+                  srcset="./Image/portfolio-filter/desktop/portfolio.6.desktop.jpg 1x, ./Image/portfolio-filter/desktop/portfolio.6.desktop2x.jpg 2x"
+                  media="(min-width: 1200px)">
+                  <source
+                  srcset="./Image/portfolio-filter/tablet/portfolio.6.tablet.jpg 1x, ./Image/portfolio-filter/tablet/portfolio.6.tablet2x.jpg 2x"
+                  media="(min-width: 768px)">      
+                  <source 
+                  srcset="./Image/portfolio-filter/mobile/portfolio.6.mobile.jpg 1x, ./Image/portfolio-filter/mobile/portfolio.6.mobile2x.jpg 2x"      
+                  media="(min-width: 320px)">             
+                  <img
+                  src="./Image/portfolio-filter/mobile/portfolio.6.mobile.jpg"
+                  alt="Веб-сайт инспирейшн хез ноу бордерз"
+                />
+                </picture>
               <p class="pf-card-overlay">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
               </p>
             </div>
@@ -190,12 +244,21 @@
            <li class="item">
             <a class="pf-link link" href="#">
               <div class="pf-card-relative">
-              <img
-                src="./Image/portfolio-filter/design-edition.jpg"
-                alt="дизайн Издания лимитид едишн"
-                width="370"
-                height="294"
-              />
+                <picture>
+                  <source
+                  srcset="./Image/portfolio-filter/desktop/portfolio.7.desktop.jpg 1x, ./Image/portfolio-filter/desktop/portfolio.7.desktop2x.jpg 2x"
+                  media="(min-width: 1200px)">
+                  <source
+                  srcset="./Image/portfolio-filter/tablet/portfolio.7.tablet.jpg 1x, ./Image/portfolio-filter/tablet/portfolio.7.tablet2x.jpg 2x"
+                  media="(min-width: 768px)">      
+                  <source 
+                  srcset="./Image/portfolio-filter/mobile/portfolio.7.mobile.jpg 1x, ./Image/portfolio-filter/mobile/portfolio.7.mobile2x.jpg 2x"      
+                  media="(min-width: 320px)">             
+                  <img
+                  src="./Image/portfolio-filter/mobile/portfolio.7.mobile.jpg"
+                  alt="дизайн Издания лимитид едишн"
+                />
+                </picture>
               <p class="pf-card-overlay">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
               </p>
             </div>
@@ -208,12 +271,21 @@
            <li class="item">
             <a class="pf-link link" href="#">
               <div class="pf-card-relative">
-              <img
-                src="./Image/portfolio-filter/marketing-project-lab.jpg"
-                alt="Маркетинг проекта лаб"
-                width="370"
-                height="294"
-              />
+                <picture>
+                  <source
+                  srcset="./Image/portfolio-filter/desktop/portfolio.8.desktop.jpg 1x, ./Image/portfolio-filter/desktop/portfolio.8.desktop2x.jpg 2x"
+                  media="(min-width: 1200px)">
+                  <source
+                  srcset="./Image/portfolio-filter/tablet/portfolio.8.tablet.jpg 1x, ./Image/portfolio-filter/tablet/portfolio.8.tablet2x.jpg 2x"
+                  media="(min-width: 768px)">      
+                  <source 
+                  srcset="./Image/portfolio-filter/mobile/portfolio.8.mobile.jpg 1x, ./Image/portfolio-filter/mobile/portfolio.8.mobile2x.jpg 2x"      
+                  media="(min-width: 320px)">             
+                  <img
+                  src="./Image/portfolio-filter/mobile/portfolio.8.mobile.jpg"
+                  alt="Маркетинг проекта лаб"
+                />
+                </picture>
               <p class="pf-card-overlay">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
               </p>
             </div>
@@ -226,12 +298,21 @@
            <li class="item">
             <a class="pf-link link" href="#">
               <div class="pf-card-relative">
-              <img
-                src="./Image/portfolio-filter/app-growing-business.jpg"
-                alt="приложение гровинг бизнес"
-                width="370"
-                height="294"
-              />
+                <picture>
+                  <source
+                  srcset="./Image/portfolio-filter/desktop/portfolio.9.desktop.jpg 1x, ./Image/portfolio-filter/desktop/portfolio.9.desktop2x.jpg 2x"
+                  media="(min-width: 1200px)">
+                  <source
+                  srcset="./Image/portfolio-filter/tablet/portfolio.9.tablet.jpg 1x, ./Image/portfolio-filter/tablet/portfolio.9.tablet2x.jpg 2x"
+                  media="(min-width: 768px)">      
+                  <source 
+                  srcset="./Image/portfolio-filter/mobile/portfolio.9.mobile.jpg 1x, ./Image/portfolio-filter/mobile/portfolio.9.mobile2x.jpg 2x"      
+                  media="(min-width: 320px)">             
+                  <img
+                  src="./Image/portfolio-filter/mobile/portfolio.9.mobile.jpg"
+                  alt="приложение гровинг бизнес"
+                />
+                </picture>
               <p class="pf-card-overlay">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
               </p>
             </div>
@@ -246,7 +327,7 @@
       </section>
      </main>
            <!--FOOTER-->
-      <footer class="footer">
+     <!-- <footer class="footer">
        <div class="container page-footer">
          <div class="address">
           <a class="logo footer__logo  link" href="#"><span>Web</span>Studio</a>
@@ -307,9 +388,9 @@
               </a>
               </li>
             </ul>
-          </div>
+          </div>-->
        <!--Подпишитесь на рассылку-->
-         <div  class="subscribe-footer">
+        <!-- <div  class="subscribe-footer">
             <h3 class="footer-title">подпишитесь на рассылку</h3>
            <form action="#" method="GET" class="subscribe-form">
              <input type="text" name="user-email" class="subscribe-form-input" placeholder="E-mail">
@@ -322,6 +403,9 @@
            </form>
           </div>
         </div>
-    </footer>
+    </footer>-->
   </body>
 </html>
+
+
+
