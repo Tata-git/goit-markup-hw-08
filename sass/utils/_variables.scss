@@ -8,18 +8,16 @@
 /*==основной фон #E5E5E5==*/
 /*==тёмный фон #2f303a==*/
 
-:root {
-    --primary-text-color: #212121;
-    --text-color: #757575;
-    --white-text-color: #ffffff;
-    --accent-color: #2196f3;
-    --transparent-text-color: rgba(255, 255, 255, 0.6);
-    --secondary-background: #f5f4fa;
-    --primary-background: #e5e5e5;
-    --background-black: #2f303a;
-    --background-white: #ffffff;
-    --backgraund-social-link: rgba(255, 255, 255, 0.1);
-  
-    --transition-duretion: 250ms;
-    --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
+$primary-text-color: #212121;
+$text-color: #757575;
+$white-text-color: #ffffff;
+$accent-color: #2196f3;
+$transparent-text-color: rgba(255, 255, 255, 0.6);
+$secondary-background: #f5f4fa;
+$primary-background: #e5e5e5;
+$background-black: #2f303a;
+$background-white: #ffffff;
+$backgraund-social-link: rgba(255, 255, 255, 0.1);
+
+$transition-duretion: 250ms;
+$transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
