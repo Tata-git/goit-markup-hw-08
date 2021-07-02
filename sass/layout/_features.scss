@@ -1,4 +1,3 @@
-
 .features-description {
   @media screen and (min-width: 768px) {
     display: flex;
@@ -34,7 +33,7 @@
   margin-top: 0;
   margin-bottom: 10px;
   @include font();
-  color: var(--primary-text-color);
+  color: $primary-text-color;
   text-transform: uppercase;
 
   @media screen and (max-width: 767px) {
@@ -45,7 +44,7 @@
   margin-top: 0;
   margin-bottom: 0;
   @include font($lh: 1.714);
-  color: var(--text-color);
+  color: $text-color;
 
   @media screen and (min-width: 768px) {
   }
@@ -57,7 +56,7 @@
   align-items: center;
   margin-bottom: 30px;
   /*outline: 1px solid red;*/
-  background-color: var(--secondary-background);
+  background-color: $secondary-background;
   border-radius: 4px;
 }
 
@@ -83,7 +82,7 @@
     align-items: center;
     margin-bottom: 30px;
     /*outline: 1px solid red;*/
-    background-color: var(--secondary-background);
+    background-color: $secondary-background;
     border-radius: 4px;
   }
   .fs-icon {
