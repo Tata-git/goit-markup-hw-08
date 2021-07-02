@@ -1,15 +1,23 @@
+
+
+
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
-}
-@media screen and (max-width: 767px) {
-  .section:not(:last-child) {
-    margin-bottom: 60px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .section {
+
+  @media screen and (min-width: 1200px) {
     padding-top: 94px;
-    padding-bottom: 94px;
+    &:not(.features) {
+      padding-bottom: 94px;
+    }
   }
 }
+.features {
+  padding-bottom: 0;
+}
+// не працює
+//   @media screen and (min-width: 1200px) {
+//     .features {
+//     padding-bottom: -94px;
+//   }
+// }
