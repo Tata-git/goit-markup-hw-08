@@ -217,12 +217,9 @@ body {
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.192;
+  font-size: 24px;
+  line-height: 1.166;
   letter-spacing: 0.03em;
-  /* font-size: 26px;
-    line-height: 1.192;
-    letter-spacing: 0.03em;*/
 }
 
 .logo > span {
@@ -321,7 +318,7 @@ body {
 }
 
 .modal-form-input:focus {
-  border-color: var(--accent-color);
+  border-color: #2196f3;
   outline: none;
 }
 
@@ -339,13 +336,9 @@ body {
 }
 
 .modal-form-input:focus + .modal-form-icon {
-  fill: var(--accent-color);
+  fill: #2196f3;
 }
 
-/*щоб відцентрувати іконку, яку ловить label (modal-form-field), створюємо div (modal-form-wrapper) і задаємо для нього  position: relative, а у label - видаляємо 
-    .modal-form-field {
-      position: relative;
-    }*/
 .modal-form-wrapper {
   margin-top: 4px;
   position: relative;
@@ -357,7 +350,7 @@ body {
   font-size: 14px;
   line-height: 1.142;
   letter-spacing: 0.01em;
-  color: var(--text-color);
+  color: #757575;
 }
 
 .modal-form-message {
@@ -400,20 +393,9 @@ body {
 
 .modal-form-message:focus {
   outline: none;
-  border-color: var(--accent-color);
+  border-color: #2196f3;
 }
 
-/*
-    .modal-form-checkbox {
-      position: absolute !important;
-      clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-/* clip: rect(1px, 1px, 1px, 1px);
-      padding: 0 !important;
-      border: 0 !important;
-      height: 1px !important;
-      width: 1px !important;
-      overflow: hidden;
-    }*/
 .icon-check {
   display: inline-block;
   vertical-align: middle;
@@ -421,54 +403,44 @@ body {
   height: 15px;
   border: 2px solid #000000;
   border-radius: 2px;
-  /*background-color: tomato;*/
   margin-right: 8px;
 }
 
 .modal-form-checkbox:checked + .icon-check {
   border-color: transparent;
-  /* background-color: violet;*/
   background-image: url(../Image/icon-check.svg);
   background-size: contain;
   background-origin: border-box;
 }
 
 .modal-form-checkbox:focus + .icon-check {
-  outline: 1px solid var(--accent-color);
+  outline: 1px solid #2196f3;
   border-radius: 4px;
 }
 
-/*.modal-form-checkbox:checked + .modal-form-checkbox-policy {
-      color: red;
-    }*/
-/*
-    .modal-form-checkbox:checked + .modal-form-checkbox-policy::before {
-    background-color: green; }
-    .icon-check */
 .modal-form-checkbox-policy {
   display: inline-block;
   vertical-align: middle;
   margin-top: 10px;
-  /* outline: 1px solid orange;*/
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
-  color: var(--text-color);
+  color: #757575;
 }
 
 .modal-form-policy-link {
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 .modal-btn {
-  -webkit-transition: background-color var(--transition-duretion) var(--transition-timing-function);
-  transition: background-color var(--transition-duretion) var(--transition-timing-function);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: inline-block;
   border: 1px solid transparent;
   border-radius: 4px;
   min-width: 200px;
-  color: var(--white-text-color);
-  background-color: var(--accent-color);
+  color: #ffffff;
+  background-color: #2196f3;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.874;
@@ -491,8 +463,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .header .site-nav,
@@ -596,11 +568,17 @@ body {
 }
 
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 400px;
   text-align: center;
-  max-width: 1600px;
-  height: 600px;
   margin-left: auto;
   margin-right: auto;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../Image/hero/hero-mob-1x-min.jpg);
@@ -609,7 +587,13 @@ body {
   background-position: center;
   background-size: cover;
   background-color: #c4c4c4;
-  /*outline: 1px solid greenyellow;*/
+}
+
+@media screen and (min-width: 1200) {
+  .hero {
+    max-width: 1600px;
+    min-height: 600px;
+  }
 }
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -619,15 +603,37 @@ body {
   }
 }
 
-@media (min-device-pixel-ratio: 2) and (min-width: 768px), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../Image/hero/hero-tablet-1x-min.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../Image/hero/hero-tablet-1x-min.jpg);
+  }
+}
+
+@media (min-device-pixel-ratio: 2) and (min-width: 768px), (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), (min-resolution: 192dpi) and (min-width: 768px), (min-resolution: 2dppx) and (min-width: 768px) {
   .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../Image/hero/hero-tablet-2x-min.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../Image/hero/hero-tablet-2x-min.jpg);
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../Image/hero/hero-desc-1x-min.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../Image/hero/hero-desc-1x-min.jpg);
+  }
+}
+
+@media (min-device-pixel-ratio: 2) and (min-width: 1200px), (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), (min-resolution: 192dpi) and (min-width: 1200px), (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../Image/hero/hero-desc-2x-min.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../Image/hero/hero-desc-2x-min.jpg);
+  }
+}
+
 .hero__modal-btn {
   padding: 10px 32px;
+  color: #ffffff;
 }
 
 .hero__modal-btn:hover, .hero__modal-btn:focus {
@@ -639,9 +645,9 @@ body {
   margin-bottom: 30px;
   color: #ffffff;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.364;
-  letter-spacing: 0.06em;
+  font-size: 26px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
@@ -992,5 +998,168 @@ body {
 .clients-icon:hover .clients-logo-icon,
 .clients-icon:focus .clients-logo-icon {
   fill: #2196f3;
+}
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: #2f303a;
+  text-align: center;
+}
+
+.footer__logo {
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.address {
+  margin-bottom: 60px;
+}
+
+.footer-list {
+  font-style: normal;
+}
+
+.footer-list .footer-item + .footer-item {
+  margin-top: 8px;
+}
+
+@media screen and (min-width: 1200) {
+  .footer-list .footer-item + .footer-item {
+    margin-top: 9px;
+  }
+}
+
+.footer-item {
+  margin-top: 20px;
+}
+
+.pluse {
+  margin-right: auto;
+  display: inline-block;
+}
+
+.maps-link {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.footer-mail-link,
+.footer-tel-link {
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.142px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+/*---subscribe---*/
+.subscribe-footer {
+  margin-left: auto;
+  margin-top: 60px;
+}
+
+.subscribe-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.subscribe-form-input {
+  margin-right: 10px;
+  padding: 15px 16px;
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background: #2F303A;
+  /*text*/
+  color: #ffffff;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+}
+
+.subscribe-form-input::-webkit-input-placeholder {
+  font-size: 16px;
+  line-height: 1.24;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe-form-input:-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 1.24;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe-form-input::-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 1.24;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe-form-input::placeholder {
+  font-size: 16px;
+  line-height: 1.24;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe-form-btn {
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 4px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0 auto;
+  min-width: 200px;
+  height: 50px;
+  background-color: #2196f3;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.submit-telegram {
+  margin-left: 10px;
+}
+
+.subscribe {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.874;
+  letter-spacing: 0.06em;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
 }
 /*# sourceMappingURL=main.css.map */

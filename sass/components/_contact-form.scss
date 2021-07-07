@@ -28,7 +28,7 @@
       padding-left: 42px;
     
        &:focus {
-         border-color: var(--accent-color);
+         border-color: $accent-color;
          outline: none;
          }
      }
@@ -44,13 +44,13 @@
      /* background-color:tomato;*/
 
       .modal-form-input:focus + & {
-        fill: var(--accent-color);
+        fill: $accent-color;
          }
      }
-    /*щоб відцентрувати іконку, яку ловить label (modal-form-field), створюємо div (modal-form-wrapper) і задаємо для нього  position: relative, а у label - видаляємо 
-    .modal-form-field {
-      position: relative;
-    }*/
+    // щоб відцентрувати іконку, яку ловить label (modal-form-field), створюємо div (modal-form-wrapper) і задаємо для нього  position: relative, а у label - видаляємо 
+    // .modal-form-field {
+    //   position: relative;
+    // }
     .modal-form-wrapper {
       margin-top: 4px;
       position: relative;
@@ -63,7 +63,7 @@
       font-size: 14px;
       line-height: 1.142;
       letter-spacing: 0.01em;
-      color: var(--text-color);
+      color: $text-color;
     }
     .modal-form-message {
       margin-top: 4px;
@@ -81,20 +81,20 @@
         }
         &:focus {
           outline: none;
-          border-color: var(--accent-color);
+          border-color: $accent-color;
         }
      }
-    /*
-    .modal-form-checkbox {
-      position: absolute !important;
-      clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-     /* clip: rect(1px, 1px, 1px, 1px);
-      padding: 0 !important;
-      border: 0 !important;
-      height: 1px !important;
-      width: 1px !important;
-      overflow: hidden;
-    }*/
+    // /*
+    // .modal-form-checkbox {
+    //   position: absolute !important;
+    //   clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    //  /* clip: rect(1px, 1px, 1px, 1px);
+    //   padding: 0 !important;
+    //   border: 0 !important;
+    //   height: 1px !important;
+    //   width: 1px !important;
+    //   overflow: hidden;
+    // }*/
     .icon-check {
       display: inline-block;
       vertical-align: middle;
@@ -102,43 +102,43 @@
       height: 15px;
       border: 2px solid #000000;
       border-radius: 2px;
-      /*background-color: tomato;*/
+      // /*background-color: tomato;*/
     
       margin-right: 8px;
 
       .modal-form-checkbox:checked + & {
         border-color: transparent;
-       /* background-color: violet;*/
+      //  /* background-color: violet;*/
         background-image: url(../Image/icon-check.svg);
         background-size: contain;
         background-origin: border-box;
       }
       .modal-form-checkbox:focus + & {
-        outline: 1px solid var(--accent-color);
+        outline: 1px solid $accent-color;
         border-radius: 4px;
       }
     }
 
-    /*.modal-form-checkbox:checked + .modal-form-checkbox-policy {
-      color: red;
-    }*/
-    /*
-    .modal-form-checkbox:checked + .modal-form-checkbox-policy::before {
-    background-color: green; }
-    .icon-check */
+    // /*.modal-form-checkbox:checked + .modal-form-checkbox-policy {
+    //   color: red;
+    // }*/
+    // /*
+    // .modal-form-checkbox:checked + .modal-form-checkbox-policy::before {
+    // background-color: green; }
+    // .icon-check */
     
     .modal-form-checkbox-policy {
       display: inline-block;
       vertical-align: middle;
       margin-top: 10px;
     
-     /* outline: 1px solid orange;*/
+    //  /* outline: 1px solid orange;*/
       font-size: 14px;
       line-height: 1.714;
       letter-spacing: 0.03em;
-      color: var(--text-color);
+      color: $text-color;
     }
     .modal-form-policy-link {
-      color: var(--accent-color);
+      color: $accent-color;
     }
 
