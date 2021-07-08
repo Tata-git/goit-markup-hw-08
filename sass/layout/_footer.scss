@@ -23,10 +23,10 @@
 .adress-pluse-tablet {
     @media screen and (min-width: 798) {
         display: flex;
+        justify-content: space-between;
         // align-items: baseline;
     }
 }
-
 .footer-list {
     font-style: normal;
 }
