@@ -1,125 +1,141 @@
-
-
 .footer {
-    // display: flex;
     padding-top: 60px;
-    padding-bottom: 60px; 
+    padding-bottom: 60px;
+    text-align: center;
     background: $background-black;
 
     &__logo {
-      margin-bottom: 20px;
-      color: $white-text-color;
-    } 
-  text-align: center; 
-  }
-.address {
-  margin-bottom: 60px;
-}
-  .footer-list {
-    font-style: normal;
-  }
-  .footer-list .footer-item + .footer-item {
-    margin-top: 8px;
-    @media screen and (min-width: 1200) {
-      margin-top: 9px;
+        margin-bottom: 20px;
+        color: $white-text-color;
     }
 
-  }
-  .footer-item {
-    margin-top: 20px;
-  }
-  // .page-footer {
-  //   display: flex;
-  //   align-items: baseline;
-  // }
-  .pluse {
-    // margin-left: 70px;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
+}
+.footer-address {
+    margin-bottom: 60px;
+    // @media screen and (min-width: 1200) {
+    //     margin-bottom: 0;
+    //     text-align: left;
+    // }
+}
+.adress-pluse-tablet {
+    @media screen and (min-width: 798) {
+        display: flex;
+        // align-items: baseline;
+    }
+}
 
+.footer-list {
+    font-style: normal;
+}
+.footer-list .footer-item + .footer-item {
+    margin-top: 8px;
+    // @media screen and (min-width: 1200) {
+    //     margin-top: 9px;
+    // }
+}
+.footer-item {
+    margin-top: 20px;
+}
+// .page-footer {
+//     @media screen and (min-width: 1200px) {
+//         display: flex;
+//         align-items: baseline;
+//     }
+// }
+.pluse {
+    // @media screen and (min-width: 1200px) {
+    //     margin-left: 70px;
+    // }
     margin-right: auto;
     display: inline-block;
-    // /*outline: 1px solid red;*/
-  }
-  .maps-link {
-    font-family: "Roboto", sans-serif;
+    outline: 1px solid red;
+}
+.maps-link {
+    font-family: 'Roboto', sans-serif;
     @include font($lh: 1.714);
     color: $white-text-color;
-  }
-  .footer-mail-link,
-  .footer-tel-link {
+}
+.footer-mail-link,
+.footer-tel-link {
     @include font($lh: 1.714);
     color: $transparent-text-color;
-  }
-  .footer-title {
+}
+.footer-title {
     margin-bottom: 20px;
     font-weight: 700;
     @include font();
     color: $white-text-color;
     text-transform: uppercase;
-  }
-  /*---subscribe---*/
-  .subscribe-footer {
-    margin-left: auto;
+}
+/*---subscribe---*/
+.subscribe-footer {
     margin-top: 60px;
-  }
-  .subscribe-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    // @media screen and (min-width: 1200px) {
+    //     margin-left: auto;
+    //     margin-top: 0;
+    // }
+}
+.subscribe-form {
     width: 100%;
-  }
-  .subscribe-form-input {
-    margin-right: 10px;
+    // @media screen and (min-width: 1200px) {
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
+    // }
+}
+.subscribe-form-input {
+    margin-bottom: 20px;
     padding: 15px 16px;
-  
-    width: 358px;
+
+    width: 450px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
-    background: #2F303A;
-    /*text*/
+    background: #2f303a;
+    //text
     color: $white-text-color;
     font-size: 14px;
     letter-spacing: 0.1em;
 
-    &::placeholder {
-      @include font(16px, 1.24);
-      color: rgba(255, 255, 255, 0.6);
-    }
-  }
+    // @media screen and (min-width: 1200px) {
+    //     margin-right: 10px;
+    //     margin-bottom: 0;
+    //     width: 358px;
+    // }
 
-  .subscribe-form-btn {
-    transition: background-color $transition-duretion $transition-timing-function;
-  
+    &::placeholder {
+        @include font(16px, 1.24);
+        color: rgba(255, 255, 255, 0.6);
+    }
+}
+
+.subscribe-form-btn {
+    transition: background-color $transition-duretion
+        $transition-timing-function;
+
     display: flex;
     justify-content: center;
     border-radius: 4px;
     padding-top: 10px;
     padding-bottom: 10px;
     margin: 0 auto;
-  
-  
+
     min-width: 200px;
     height: 50px;
     background-color: $accent-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     cursor: pointer;
-  }
-  .submit-telegram {
+}
+.submit-telegram {
     margin-left: 10px;
-  }
-  .subscribe {
+}
+.subscribe {
     font-weight: 700;
     @include font(16px, 1.874, 0.06em);
     text-align: center;
     align-items: center;
     color: $white-text-color;
-  }
-
-  // .subscribe-form-btn::after {
-  //   content: " ";
-  //   width: 24px;
-  //   height: 24px;
-  //   background-image: url(../Image/submit-telegram.svg);
-  //   background-size: contain;
-  //   background-position: center;
-  // }
+}

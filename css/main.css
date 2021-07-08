@@ -34,10 +34,6 @@
   overflow: hidden;
 }
 
-/*@include font();
-/* font-size: 14px;
- line-height: 1.142;( 16px)
- letter-spacing: 0.03em;*/
 *,
 *::before,
 *::after {
@@ -70,8 +66,8 @@ img {
 
 body {
   font-family: "Roboto", "Raleway", sans-serif;
-  color: var(--primary-text-color);
-  background-color: var(--white-text-color);
+  color: #212121;
+  background-color: #ffffff;
 }
 
 .section {
@@ -589,13 +585,6 @@ body {
   background-color: #c4c4c4;
 }
 
-@media screen and (min-width: 1200) {
-  .hero {
-    max-width: 1600px;
-    min-height: 600px;
-  }
-}
-
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../Image/hero/hero-mob-2x-min.jpg);
@@ -619,6 +608,8 @@ body {
 
 @media screen and (min-width: 1200px) {
   .hero {
+    max-width: 1600px;
+    height: 600px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../Image/hero/hero-desc-1x-min.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../Image/hero/hero-desc-1x-min.jpg);
   }
@@ -649,6 +640,14 @@ body {
   line-height: 1.62;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    font-size: 44px;
+    line-height: 1.364;
+    letter-spacing: 0.06em;
+  }
 }
 
 .features-description {
@@ -1003,8 +1002,8 @@ body {
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  background: #2f303a;
   text-align: center;
+  background: #2f303a;
 }
 
 .footer__logo {
@@ -1012,8 +1011,24 @@ body {
   color: #ffffff;
 }
 
-.address {
+@media screen and (min-width: 1200px) {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.footer-address {
   margin-bottom: 60px;
+}
+
+@media screen and (min-width: 798) {
+  .adress-pluse-tablet {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .footer-list {
@@ -1024,12 +1039,6 @@ body {
   margin-top: 8px;
 }
 
-@media screen and (min-width: 1200) {
-  .footer-list .footer-item + .footer-item {
-    margin-top: 9px;
-  }
-}
-
 .footer-item {
   margin-top: 20px;
 }
@@ -1037,10 +1046,11 @@ body {
 .pluse {
   margin-right: auto;
   display: inline-block;
+  outline: 1px solid red;
 }
 
 .maps-link {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
@@ -1067,32 +1077,21 @@ body {
 
 /*---subscribe---*/
 .subscribe-footer {
-  margin-left: auto;
   margin-top: 60px;
 }
 
 .subscribe-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 100%;
 }
 
 .subscribe-form-input {
-  margin-right: 10px;
+  margin-bottom: 20px;
   padding: 15px 16px;
-  width: 358px;
+  width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
-  background: #2F303A;
-  /*text*/
+  background: #2f303a;
   color: #ffffff;
   font-size: 14px;
   letter-spacing: 0.1em;
