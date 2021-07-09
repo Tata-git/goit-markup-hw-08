@@ -3,55 +3,59 @@
     padding-bottom: 60px;
     text-align: center;
     background: $background-black;
-
+    
     &__logo {
         margin-bottom: 20px;
         color: $white-text-color;
     }
-
+    
     @media screen and (min-width: 1200px) {
         display: flex;
     }
 }
-.footer-address {
-    margin-bottom: 60px;
-    // @media screen and (min-width: 1200) {
-    //     margin-bottom: 0;
-    //     text-align: left;
-    // }
+.page-footer {
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: baseline;
+    }
 }
 .adress-pluse-tablet {
-    @media screen and (min-width: 798) {
+    @media screen and (min-width: 768) {
         display: flex;
         justify-content: space-between;
         // align-items: baseline;
     }
+}
+.footer-address {
+    margin-bottom: 60px;
+    width: 232px;
+    height: 127px;
+    // @media screen and (min-width: 1200) {
+    //     margin-bottom: 0;
+    //     text-align: left;
+    // }
 }
 .footer-list {
     font-style: normal;
 }
 .footer-list .footer-item + .footer-item {
     margin-top: 8px;
-    // @media screen and (min-width: 1200) {
-    //     margin-top: 9px;
-    // }
+    @media screen and (min-width: 1200) {
+        margin-top: 9px;
+    }
 }
 .footer-item {
     margin-top: 20px;
 }
-// .page-footer {
-//     @media screen and (min-width: 1200px) {
-//         display: flex;
-//         align-items: baseline;
-//     }
-// }
 .pluse {
-    // @media screen and (min-width: 1200px) {
-    //     margin-left: 70px;
-    // }
     margin-right: auto;
     display: inline-block;
     outline: 1px solid red;
+    width: 206px;
+    height: 80px;
+    @media screen and (min-width: 1200px) {
+        margin-left: 70px;
+    }
 }
 .maps-link {
     font-family: 'Roboto', sans-serif;
@@ -73,18 +77,20 @@
 /*---subscribe---*/
 .subscribe-footer {
     margin-top: 60px;
-    // @media screen and (min-width: 1200px) {
-    //     margin-left: auto;
-    //     margin-top: 0;
-    // }
+    width: 450px;
+    height: 156px;
+    @media screen and (min-width: 1200px) {
+        margin-left: auto;
+        margin-top: 0;
+    }
 }
 .subscribe-form {
     width: 100%;
-    // @media screen and (min-width: 1200px) {
-    //     display: flex;
-    //     justify-content: center;
-    //     align-items: center;
-    // }
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 .subscribe-form-input {
     margin-bottom: 20px;
@@ -100,11 +106,11 @@
     font-size: 14px;
     letter-spacing: 0.1em;
 
-    // @media screen and (min-width: 1200px) {
-    //     margin-right: 10px;
-    //     margin-bottom: 0;
-    //     width: 358px;
-    // }
+    @media screen and (min-width: 1200px) {
+        margin-right: 10px;
+        margin-bottom: 0;
+        width: 358px;
+    }
 
     &::placeholder {
         @include font(16px, 1.24);

@@ -3,7 +3,6 @@
     display: flex;
     flex-wrap: wrap;
     margin-right: -30px;
-
 }
 // li
 .clients-item {
@@ -11,12 +10,12 @@
     margin-right: 30px;
     margin-bottom: 30px;
     @media screen and (min-width: 768px) {
-      flex-basis: calc((100% - 90px) / 3);
+        flex-basis: calc((100% - 90px) / 3);
     }
     @media screen and (min-width: 1200px) {
-      flex-basis: calc((100% - 180px) / 6);
-      margin-bottom: 0;
-  }
+        flex-basis: calc((100% - 180px) / 6);
+        margin-bottom: 0;
+    }
 }
 .clients-icon {
     display: flex;
@@ -53,4 +52,3 @@
 //   .our-clients-list .item + .item {
 //       margin-left: 30px;
 //   }
-
