@@ -5,9 +5,12 @@
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     @include font(24px, 1.166);    
-    // @include font(26px, 1.192);
 
     & > span {
       color: #2196f3;
      }
+    //  не застосувались
+    @media screen and (min-width: 1200px) {
+      @include font(26px, 1.192);    
+    }
   }
