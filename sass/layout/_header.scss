@@ -37,8 +37,13 @@
     // width: 100%;
     .container {
         position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 48px;
+        padding-bottom: 48px;
+        height: 100%;
     }
-
     .menu-close {
         position: absolute;
         right: 0;
@@ -72,9 +77,9 @@
         transition-duration: $transition-duretion;
         transition-timing-function: $transition-timing-function;
     }
-    // & .link .current {
-    //   color: $accent-color;
-    // }
+    & .link.current {
+        color: $accent-color;
+    }
 }
 
 .mobile-contacts__link {
