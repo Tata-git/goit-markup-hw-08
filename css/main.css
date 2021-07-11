@@ -466,6 +466,27 @@ body {
   display: none;
 }
 
+.header .menu-open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 0;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.header .menu-open .mobile-menu-icon {
+  width: 24px;
+  height: 16px;
+}
+
 .page-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -480,45 +501,46 @@ body {
   padding-bottom: 16px;
 }
 
-.mobile-nav {
-  position: absolute;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: #fff;
-}
-
-.mobile-nav .container {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-top: 48px;
-  padding-bottom: 48px;
-  height: 100%;
-}
-
-.mobile-nav .menu-close {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 40px;
-  height: 40px;
-  background-color: #ffffff;
-  cursor: pointer;
-  border: none;
-}
-
-.mobile-nav .menu-close-icon {
-  display: inline-block;
-  vertical-align: middle;
+@media screen and (max-width: 767) {
+  .mobile-nav {
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+  }
+  .mobile-nav .container {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    height: 100%;
+  }
+  .mobile-nav .menu-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    cursor: pointer;
+    border: none;
+  }
+  .mobile-nav .menu-close-icon {
+    display: inline-block;
+    vertical-align: middle;
+  }
 }
 
 .mobile-menu .item:not(:last-child) {

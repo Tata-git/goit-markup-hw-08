@@ -6,19 +6,19 @@
         display: none;
     }
     //   // mobile-menu-btn - menu-open
-    //   & .menu-open {
-    //     display: flex;
-    //     justify-content: center;
-    //     align-items: center;
-    //     line-height: 0;
-    //     background-color: transparent;
-    //     border: none;
-    //     padding: 0;
-    //     & .mobile-menu-icon {
-    //       width: 24px;
-    //       height: 16px;
-    //     }
-    //   }
+      & .menu-open {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 0;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        & .mobile-menu-icon {
+          width: 24px;
+          height: 16px;
+        }
+      }
 }
 .page-header {
     // position: relative;
@@ -29,40 +29,43 @@
     padding-bottom: 16px;
 }
 .mobile-nav {
-    position: absolute;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: #fff;
-    // position: fixed;
-    //     left: 0;
-    // width: 100%;
-    .container {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding-top: 48px;
-        padding-bottom: 48px;
-        height: 100%;
-    }
-    .menu-close {
-        position: absolute;
-        right: 0;
+    @media screen and (max-width: 767) {
+        // position: absolute;
+        position: fixed;
+        z-index: 20;
         top: 0;
-        width: 40px;
-        height: 40px;
-        background-color: #ffffff;
-        cursor: pointer;
-        //       display: flex;
-        //       align-items: center;
-        //       justify-content: center;
-        border: none;
-        // border: transparent;
-    }
-    .menu-close-icon {
-        display: inline-block;
-        vertical-align: middle;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #fff;
+        // width: 100%;
+        .container {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-top: 48px;
+            padding-bottom: 48px;
+            height: 100%;
+        }
+        .menu-close {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 40px;
+            height: 40px;
+            background-color: #ffffff;
+            cursor: pointer;
+            //       display: flex;
+            //       align-items: center;
+            //       justify-content: center;
+            border: none;
+            // border: transparent;
+        }
+        .menu-close-icon {
+            display: inline-block;
+            vertical-align: middle;
+        }
     }
 }
 .mobile-menu {
@@ -94,11 +97,6 @@
 //     padding-top: 48px;
 //     padding-bottom: 48px;
 //     padding-left: 25px;
-
-//     &.is-open {
-//       display: none;
-//       // overflow: hidden;
-//     }
 
 //   & .mobile-contacts {
 //     margin-bottom: 61px;
