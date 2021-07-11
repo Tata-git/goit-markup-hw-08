@@ -456,6 +456,11 @@ body {
   text-align: center;
 }
 
+.header {
+  width: 100%;
+  z-index: 1;
+}
+
 .header .site-nav,
 .header .site-contacts {
   display: none;
@@ -1040,6 +1045,9 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 

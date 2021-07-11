@@ -23,17 +23,17 @@
     @media screen and (min-width: 768) {
         display: flex;
         justify-content: space-between;
-        // align-items: baseline;
+        align-items: baseline;
     }
 }
 .footer-address {
     margin-bottom: 60px;
     width: 232px;
     height: 127px;
-    // @media screen and (min-width: 1200) {
+     @media screen and (min-width: 1200) {
     //     margin-bottom: 0;
     //     text-align: left;
-    // }
+    }
 }
 .footer-list {
     font-style: normal;
