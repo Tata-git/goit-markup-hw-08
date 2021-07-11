@@ -9,7 +9,6 @@
     & > span {
       color: #2196f3;
      }
-    //  не застосувались
     @media screen and (min-width: 1200px) {
       @include font(26px, 1.192);    
     }
