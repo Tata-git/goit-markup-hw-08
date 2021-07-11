@@ -3,12 +3,12 @@
     padding-bottom: 60px;
     text-align: center;
     background: $background-black;
-    
+
     &__logo {
         margin-bottom: 20px;
         color: $white-text-color;
     }
-    
+
     @media screen and (min-width: 1200px) {
         display: flex;
     }
@@ -19,21 +19,26 @@
         align-items: baseline;
     }
 }
+
 .adress-pluse-tablet {
-    @media screen and (min-width: 768) {
+    @media screen and (min-width: 768px) {
         display: flex;
-        justify-content: space-between;
         align-items: baseline;
     }
 }
 .footer-address {
     margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
     width: 232px;
     height: 127px;
-     @media screen and (min-width: 1200) {
-    //     margin-bottom: 0;
-    //     text-align: left;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0;
     }
+    // @media screen and (min-width: 1200px) {
+    //     //     margin-bottom: 0;
+    //     //     text-align: left;
+    // }
 }
 .footer-list {
     font-style: normal;
@@ -48,8 +53,12 @@
     margin-top: 20px;
 }
 .pluse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-right: auto;
-    display: inline-block;
+    margin-left: auto;
+    // display: inline-block;
     outline: 1px solid red;
     width: 206px;
     height: 80px;
@@ -73,12 +82,25 @@
     @include font();
     color: $white-text-color;
     text-transform: uppercase;
+    @media screen and (min-width: 768px) {
+
+        text-align: center;
+    }
 }
 /*---subscribe---*/
 .subscribe-footer {
     margin-top: 60px;
     width: 450px;
     height: 156px;
+  
+    @media screen and (min-width: 768px) {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto
+        ;
+    }
     @media screen and (min-width: 1200px) {
         margin-left: auto;
         margin-top: 0;

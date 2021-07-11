@@ -28,8 +28,6 @@
     padding-bottom: 16px;
 }
 .mobile-nav {
-    @media screen and (max-width: 767) {
-        // position: absolute;
         position: fixed;
         z-index: 20;
         top: 0;
@@ -43,7 +41,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-             overflow: auto;
+            overflow: auto;
             padding-top: 48px;
             padding-bottom: 48px;
             padding-left: 40px;
@@ -58,12 +56,17 @@
             background-color: #ffffff;
             cursor: pointer;
             border: none;
+
         }
         .menu-close-icon {
             display: inline-block;
             vertical-align: middle;
         }
-    }
+}
+
+.mobile-nav.is-hidden {
+    opacity: 0;
+    pointer-events: none;
 }
 .mobile-menu {
     //     margin-bottom: 302px; не ставим, разные устройства
