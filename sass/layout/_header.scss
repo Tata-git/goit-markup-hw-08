@@ -34,6 +34,9 @@
         padding-top: 0;
         padding-bottom: 0;
     }
+    @media screen and (min-width: 1200px) {
+        justify-content: center;
+    }
 }
 .mobile-nav {
     position: fixed;
@@ -160,6 +163,9 @@
             margin-left: 50px;
         }
     }
+    @media screen and (min-width: 1200px) {
+        margin-left: 92px;
+    }
 }
 
 .site-nav-link {
@@ -182,28 +188,25 @@
 //     SITE CONTACTS
 .site-contacts {
     @media screen and (min-width: 768px) {
+        margin-left: auto;
         font-weight: 500;
         @include font($lsp: 0.02em);
         color: $text-color;
         & .item + .item {
             margin-top: 10px;
         }
-        margin-left: auto;
-//    .mail-link,
-//    .tel-link {
-       //      display: flex;
-       //      justify-content: center;
-       //      align-items: center;
-    //    transition: color $transition-duretion $transition-timing-function;
-
-//      &:hover,
-//      &:focus {
-//        color: $accent-color;
-//      }
-//    }
+        .icon-header {
+            margin-right: 10px;
+            fill: currentColor;
+        }
+        .mail-link:hover .icon-header,
+        .mail-link:focus .icon-header {
+            fill: $accent-color;
+        }
     }
     @media screen and (min-width: 1200px) {
         display: flex;
+        align-items: center;
         margin-left: auto;
         & .link {
             padding-top: 32px;
@@ -211,28 +214,21 @@
         }
         & .item + .item {
             margin-left: 30px;
+            margin-top: 0;
+        }
+        .mail-link,
+        .tel-link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: color $transition-duretion $transition-timing-function;
+
+            &:hover,
+            &:focus {
+                color: $accent-color;
+            }
         }
     }
 }
-
-
-
-//   /* .tel-link:hover,
-//    .tel-link:focus {
-//      color: $accent-color;
-//    }
-//    .mail-link:hover,
-//    .mail-link:focus {
-//      color: $accent-color;
-//    }*/
-//    .icon-header {
-//      margin-right: 10px;
-//      fill: currentColor;
-//    }
-//    .mail-link:hover .icon-header,
-//    .mail-link:focus .icon-header {
-//      fill: $accent-color;
-// }
-
 //     // overflow: auto;
 //     display: block;
