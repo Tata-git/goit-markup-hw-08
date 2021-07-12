@@ -1,7 +1,7 @@
 
 
 .backdrop {
-    transition: opacity var(--transition-duretion) var(--transition-timing-function), visibility var(--transition-duretion) var(--transition-timing-function);
+    transition: opacity $transition-duretion $transition-timing-function, visibility $transition-duretion $transition-timing-function;
   
     position: fixed;
     top: 0;
