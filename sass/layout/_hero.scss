@@ -39,7 +39,7 @@
                 $hero-gradient-color,
                 $hero-gradient-color
             ),
-            url('../../Image/hero/herotablet1x.jpg');
+            url('../Image/hero/herotablet1x.jpg');
     }
     @media (min-device-pixel-ratio: 2) and (min-width: $min-tablet - 1px),
         (min-resolution: 192dpi) and (min-width: $min-tablet - 1px),
@@ -49,7 +49,7 @@
                 $hero-gradient-color,
                 $hero-gradient-color
             ),
-            url('../../Image/hero/herotablet2x.jpg');
+            url('../Image/hero/herotablet2x.jpg');
     }
     @media screen and (min-width: 1200px) {
         max-width: 1600px;
@@ -59,7 +59,7 @@
                 $hero-gradient-color,
                 $hero-gradient-color
             ),
-            url('../../Image/hero/herodesc1x.jpg');
+            url('../Image/hero/herodesc1x.jpg');
     }
     @media (min-device-pixel-ratio: 2) and (min-width: $min-desc - 1px),
         (min-resolution: 192dpi) and (min-width: $min-desc - 1px),
@@ -69,7 +69,7 @@
                 $hero-gradient-color,
                 $hero-gradient-color
             ),
-            url('../../Image/hero/herodesc2x.jpg');
+            url('../Image/hero/herodesc2x.jpg');
     }
 
     //----------modal-btn---------
