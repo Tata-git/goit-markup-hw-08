@@ -1,6 +1,8 @@
 .header {
     width: 100%;
     z-index: 1;
+    border-bottom: 1px solid #ECECEC;  
+
     & .site-nav,
     & .site-contacts {
         @media screen and (max-width: 767px) {
@@ -44,7 +46,7 @@
     top: 0;
     left: 0;
     max-width: 767px;
-    // width: 100vw;
+    width: 100vw;
     height: 100vh;
     background-color: #fff;
     // width: 100%;
